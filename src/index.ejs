@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" />
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+    pre {
+      grid-area: output;
+      box-sizing: border-box;
+    }
+    pre[class*=language-] {
+      margin: 0;
+    }
+    #input {
+      grid-area: input;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      resize: none;
+    }
+    #preview {
+      grid-area: preview;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 50%;
+      grid-template-rows: 50%;
+      grid-template-areas:
+        'input output'
+        'preview preview';
+      grid-gap: 8px;
+      height:100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    .grid-container > * {
+      min-height: 250px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <textarea id="input"><container><row><columns small="12" large="6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam dignissimos distinctio aliquid officia molestiae quo in deleniti eum laborum, eos nesciunt fugit reiciendis quasi veniam at! Minima ratione fugiat facilis.</columns><columns small="12" large="6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quo!</columns></row></container></textarea>
+    <pre class="language-markup"><code id="output"></code></pre>
+    <iframe id="preview"></iframe>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js" integrity="sha512-WkVkkoB31AoI9DAk6SEEEyacH9etQXKUov4JRRuM1Y681VsTq7jYgrRw06cbP6Io7kPsKx+tLFpH/HXZSZ2YEQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/components/prism-markup.min.js" integrity="sha512-n7jTZRfbcHJ8Nwq9QmPPuEdScPL4Uti1yfvA/iA237hYf/XIOntX2JSiOjOpuPX/lOanojimXQZKu3L3MM763w==" crossorigin="anonymous"></script>
+</body>
+</html>
