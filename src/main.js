@@ -8,8 +8,7 @@ const $input = document.getElementById('input');
 const $preview = document.getElementById('preview');
 const $output = document.getElementById('output');
 
-const layout = `
-<!-- Emails use the XHTML Strict doctype -->
+const layout = `<!-- Emails use the XHTML Strict doctype -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml">
 <head>
